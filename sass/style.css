@@ -89,7 +89,6 @@ h1 {
 }
 
 .header {
-  position: fixed;
   top: 0;
   z-index: 1000;
   width: 100%;
@@ -146,6 +145,7 @@ h1 {
 
 @media screen and (width < 650px) {
   .menu__nav {
+    display: none;
     position: absolute;
     right: -100%;
     top: 0;
@@ -159,6 +159,7 @@ h1 {
   }
   .header.open .menu__nav {
     transform: translateX(-100%);
+    display: flex;
   }
   .menu__link {
     font-size: 4.5rem;
@@ -262,6 +263,7 @@ h1 {
   position: relative;
   display: flex;
   align-items: center;
+  z-index: 1;
 }
 
 .overlay {
