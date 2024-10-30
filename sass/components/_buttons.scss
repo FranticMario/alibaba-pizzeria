@@ -16,6 +16,10 @@
     font-weight: 600;
     transition: all 0.3s ease-in-out;
     width: 175px;
+
+    @media screen and (width < 400px) {
+        width: 125px;
+    }
 }
 
 .btn:hover {
