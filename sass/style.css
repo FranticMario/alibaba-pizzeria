@@ -281,11 +281,6 @@ h1 {
   max-width: 1200px;
   text-align: center;
 }
-@media screen and (width < 786px) {
-  .greeting__content {
-    padding-top: 150px;
-  }
-}
 
 .subheading {
   font-family: "Nothing You Could Do", cursive;
