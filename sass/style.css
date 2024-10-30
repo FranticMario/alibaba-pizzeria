@@ -259,11 +259,21 @@ h1 {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 100vh;
+  height: 1000px;
   position: relative;
   display: flex;
   align-items: center;
   z-index: 1;
+}
+@media screen and (width < 1000px) {
+  .greeting {
+    height: 600px;
+  }
+}
+@media screen and (width < 500px) {
+  .greeting {
+    height: 700px;
+  }
 }
 
 .overlay {

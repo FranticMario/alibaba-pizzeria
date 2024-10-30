@@ -3,11 +3,18 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 100vh;
+    height: 1000px;
     position: relative;
     display: flex;
     align-items: center;
     z-index: 1;
+
+    @media screen and  (width < 1000px) {
+        height: 600px;
+    }
+    @media screen and  (width < 500px) {
+        height: 700px;
+    }
 }
 
 .overlay {
