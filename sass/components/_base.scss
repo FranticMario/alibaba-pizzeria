@@ -42,10 +42,10 @@ a {
     z-index: 2;
 
     @media screen and (width < 702px) {
-        padding: 0 10px;
+        padding: 20px 10px;
     }
     @media screen and (width < 500px) {
-        padding: 0 5px;
+        padding: 20px 5px;
     }
 }
 

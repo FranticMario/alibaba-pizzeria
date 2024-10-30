@@ -70,12 +70,12 @@ a:hover {
 }
 @media screen and (width < 702px) {
   .wrapper {
-    padding: 0 10px;
+    padding: 20px 10px;
   }
 }
 @media screen and (width < 500px) {
   .wrapper {
-    padding: 0 5px;
+    padding: 20px 5px;
   }
 }
 
@@ -89,6 +89,7 @@ h1 {
 }
 
 .header {
+  position: fixed;
   top: 0;
   z-index: 1000;
   width: 100%;
@@ -253,7 +254,7 @@ h1 {
 }
 
 .greeting {
-  background-image: url("../../assets/img/background.jpg");
+  background-image: url("../assets/img/background.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -421,7 +422,7 @@ h1 {
 
 .menu {
   height: 100%;
-  background-image: url("../../assets/img/background-2.jpg");
+  background-image: url("../assets/img/background-2.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -609,7 +610,7 @@ h1 {
 }
 
 .services {
-  background: url("../../assets/img/food.png") repeat;
+  background: url("../assets/img/food.png") repeat;
   color: #5c3d03;
   position: relative;
   padding-top: 100px;
