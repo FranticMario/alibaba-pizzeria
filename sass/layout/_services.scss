@@ -1,0 +1,98 @@
+.services {
+    background: url("../../assets/img/food.png") repeat;
+    color: #5c3d03;
+    position: relative;
+    padding-top: 100px;
+}
+
+.services__overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        content: '';
+        background: #fac564;
+        opacity: 0;
+}
+
+.services__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 3;
+    position: relative;
+    gap: 50px
+   
+}
+
+
+.services__container {
+    display: flex;
+    gap: 100px;
+    @media screen and (width < 1380px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+.service__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.service__icon {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    padding: 20px 10px;
+    border: 1px solid black;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+        background-color: #fff;
+        transform: rotate(135deg);
+        .whatsapp__icon {
+                fill: #fac564; 
+                transform: rotate(-135deg)
+
+        }
+
+        .phone__icon {
+            fill: #fac564;
+            stroke: #fac564;
+            transform: rotate(-135deg)
+        }
+    }
+
+}
+
+
+
+.phone__icon {
+    width: 100px;
+    height: 100px;
+
+}
+
+.whatsapp__icon {
+    width: 100px;
+    height: 100px;
+}
+
+.service__title {
+    text-align: center;
+    font-size: 6rem;
+    @media screen and (width < 1380px) {
+        font-size: 4.5rem;
+    }
+    @media screen and (width < 520px) {
+        font-size: 3.5rem;
+    }
+}
+

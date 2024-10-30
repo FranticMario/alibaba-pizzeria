@@ -1,0 +1,63 @@
+.greeting {
+    background-image: url("../../assets/img/background.jpg") ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    opacity: .5;
+    z-index: 1;
+}
+
+.greeting__content {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    max-width: 1200px;
+    text-align: center;
+    @media screen and  (width < 786px) {
+        padding-top: 150px;
+    }
+}
+
+.subheading {
+    font-family: "Nothing You Could Do", cursive;
+    font-size: 5.9rem;
+    color: var(--selected-text-color);
+
+    @media screen and  (width < 786px) {
+        font-size: 4.5rem;
+    }
+
+}
+
+.greeting__heading {
+    margin-bottom: 35px;
+    @media screen and  (width < 786px) {
+        font-size: 3.5rem;
+    }
+}
+
+.greeting__subtitle {
+    font-size: 2.2rem;
+    line-height: 1.5;
+    font-family: 400;
+    color: #fff;
+    margin-bottom: 40px;
+
+    @media screen and  (width < 786px) {
+        font-size: 1.8rem;
+    }
+}

@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--base-text-color);
+    line-height: 1.8;
+    font-family: "Josefin Sans", Arial, sans-serif;
+    background: #101315;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: inherit; 
+    text-decoration: none;
+    &:hover {
+        color: var(--active-nav-item-color)
+    }
+}
+
+
+
+
+.wrapper {
+    max-width: 1560px;
+    margin: 0 auto;
+    padding: 0 40px;
+
+    position: relative;
+    z-index: 2;
+
+    @media screen and (width < 702px) {
+        padding: 0 10px;
+    }
+    @media screen and (width < 500px) {
+        padding: 0 5px;
+    }
+}
+
+
+h1 {
+    font-size: 4.5rem;
+    color: var(--heading-text-color);
+    font-weight: normal;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-family: "Josefin Sans", Arial, sans-serif;
+}
+
