@@ -1,21 +1,21 @@
 @font-face {
   font-family: "Georama";
-  src: url("../../assets/fonts/Georama-Regular.ttf");
+  src: url("../assets/fonts/Georama-Regular.ttf");
   font-weight: 400;
 }
 @font-face {
   font-family: "Georama";
-  src: url("../../assets/fonts/Georama-Medium.ttf");
+  src: url("../assets/fonts/Georama-Medium.ttf");
   font-weight: 500;
 }
 @font-face {
   font-family: "Georama";
-  src: url("../../assets/fonts/Georama-SemiBold.ttf");
+  src: url("../assets/fonts/Georama-SemiBold.ttf");
   font-weight: 600;
 }
 @font-face {
   font-family: "Georama";
-  src: url("../../assets/fonts/Georama-Bold.ttf");
+  src: url("../assets/fonts/Georama-Bold.ttf");
   font-weight: 700;
 }
 :root {
