@@ -189,6 +189,10 @@ h1 {
     width: 125px;
   }
 }
+.btn.btn__download {
+  align-self: center;
+  width: auto;
+}
 
 .btn:hover {
   background-color: var(--active-nav-item-color);
@@ -450,7 +454,6 @@ h1 {
 .menu__wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 20px;
   padding-top: 100px;
 }
@@ -459,11 +462,24 @@ h1 {
     padding-top: 150px;
   }
 }
+@media screen and (width < 580px) {
+  .menu__wrapper {
+    padding-top: 75px;
+  }
+}
 
 .tags__managment {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+}
+
+.downoload__container {
+  align-self: center;
+}
+
+.menu__trennung {
+  align-self: center;
 }
 
 .tags__wrapper {
@@ -635,10 +651,6 @@ h1 {
   color: #fac564;
 }
 
-.btn__downoload {
-  width: auto;
-}
-
 .services {
   background: url("../assets/img/food.png") repeat;
   color: #5c3d03;
@@ -807,8 +819,9 @@ h1 {
 }
 
 .photos {
-  height: 253px;
+  height: 353px;
   position: relative;
+  display: flex;
 }
 
 .overlay__photos {
@@ -850,8 +863,8 @@ h1 {
 }
 
 .img__box {
-  width: auto;
-  height: 253px;
+  width: 25%;
+  height: auto;
 }
 @media screen and (width < 420px) {
   .img__box {
@@ -860,6 +873,7 @@ h1 {
 }
 
 .img__restaurant {
+  background-size: contain;
   width: 100%;
   height: 100%;
 }

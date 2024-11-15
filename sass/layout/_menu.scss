@@ -11,12 +11,18 @@
 .menu__wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center;
+ 
     gap: 20px;
     padding-top: 100px;
     @media screen and (width < 1047px) {
         padding-top: 150px;
     }
+
+    @media screen and (width < 580px) {
+        padding-top: 75px;
+    }
+
+
 }
 
 .tags__managment {
@@ -24,8 +30,14 @@
     align-items: center;
     margin-bottom: 30px;
 
-    
+}
 
+.downoload__container {
+    align-self: center;
+}
+
+.menu__trennung {
+    align-self: center;
 }
 
 .tags__wrapper {
@@ -196,6 +208,3 @@
     color: #fac564;
 }
 
-.btn__downoload {
-    width: auto;
-}

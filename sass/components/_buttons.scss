@@ -20,6 +20,11 @@
     @media screen and (width < 400px) {
         width: 125px;
     }
+
+    &.btn__download {
+        align-self: center;
+        width: auto;
+    }
 }
 
 .btn:hover {
