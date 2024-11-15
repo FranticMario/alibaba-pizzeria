@@ -549,6 +549,11 @@ h1 {
   font-size: 20px;
   position: relative;
 }
+@media screen and (width < 702px) {
+  .item {
+    font-size: 14px;
+  }
+}
 
 .item__first-line {
   display: flex;
@@ -582,23 +587,23 @@ h1 {
 }
 @media screen and (width < 702px) {
   .item__number {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 @media screen and (width < 500px) {
   .item__number {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
 }
 
 @media screen and (width < 702px) {
   .item__name {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 @media screen and (width < 500px) {
   .item__name {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -612,7 +617,7 @@ h1 {
 }
 @media screen and (width < 500px) {
   .item__price {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -623,7 +628,7 @@ h1 {
 }
 @media screen and (width < 500px) {
   .item__desc {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
 }
 
