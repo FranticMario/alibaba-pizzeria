@@ -5,9 +5,14 @@
     background-position: center;
     background-attachment: fixed;
     padding-bottom: 100px;
+    overflow: hidden;
 }
 
 .menu__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
     padding-top: 100px;
     @media screen and (width < 1047px) {
         padding-top: 150px;
@@ -182,4 +187,15 @@
 .arrow__right {
     width: 75px;
     height: 75px;
+}
+
+
+
+
+.menu__trennung {
+    color: #fac564;
+}
+
+.btn__downoload {
+    width: auto;
 }

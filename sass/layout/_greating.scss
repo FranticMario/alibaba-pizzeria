@@ -68,4 +68,8 @@
     @media screen and  (width < 786px) {
         font-size: 1.8rem;
     }
+
+    @media screen and  (width < 350px) {
+        display: none;
+    }
 }

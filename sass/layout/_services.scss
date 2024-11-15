@@ -2,7 +2,7 @@
     background: url("../assets/img/food.png") repeat;
     color: #5c3d03;
     position: relative;
-    padding-top: 100px;
+    padding: 100px;
 }
 
 .services__overlay {
@@ -35,6 +35,11 @@
         justify-content: center;
     }
 
+}
+
+
+.service__header {
+    text-align: center;
 }
 
 .service__box {
