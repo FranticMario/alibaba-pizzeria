@@ -660,6 +660,15 @@ h1 {
   color: #fac564;
 }
 
+.item__price-box {
+  display: flex;
+}
+@media screen and (width < 967px) {
+  .item__price-box {
+    display: block;
+  }
+}
+
 .services {
   background: url("../assets/img/food.png") repeat;
   color: #5c3d03;

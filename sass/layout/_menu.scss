@@ -215,3 +215,10 @@
     color: #fac564;
 }
 
+
+.item__price-box {
+    display: flex;
+    @media screen and (width < 967px) {
+        display: block;
+    }
+}
