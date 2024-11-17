@@ -755,6 +755,7 @@ h1 {
 .service__title {
   text-align: center;
   font-size: 2rem;
+  width: 150px;
 }
 
 .footer {
