@@ -29,7 +29,7 @@
 
 .services__container {
     display: flex;
-    gap: 100px;
+    gap: 75px;
     @media screen and (width < 1380px) {
         flex-wrap: wrap;
         justify-content: center;
@@ -56,7 +56,7 @@
     width: 100px;
     padding: 10px 15px;
     border: 1px solid black;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     cursor: pointer;
     transition: all 0.3s;
     &:hover {
@@ -69,6 +69,12 @@
         }
 
         .phone__icon {
+            fill: #fac564;
+            stroke: #fac564;
+            transform: rotate(-135deg)
+        }
+
+        .instagram__icon {
             fill: #fac564;
             stroke: #fac564;
             transform: rotate(-135deg)
@@ -86,6 +92,11 @@
 }
 
 .whatsapp__icon {
+    width: 100px;
+    height: 75px;
+}
+
+.instagram__icon {
     width: 100px;
     height: 75px;
 }

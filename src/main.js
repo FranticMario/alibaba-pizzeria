@@ -40,32 +40,46 @@ import menu from "./menu/kebab-gerichte.js";
 const tagsContainer = document.querySelector(".menu__tags-container");
 const contentContainer = document.querySelector(".menu__items");
 
-// Функция отображения блюд в нужной структуре
 const displayMenu = (category) => {
-    contentContainer.innerHTML = ''; // очищаем перед добавлением нового меню
+    contentContainer.innerHTML = ''; // очищаем контейнер перед добавлением нового контента
 
     const dishes = menu[category];
-
     if (dishes) {
         dishes.forEach(dish => {
             const itemElement = document.createElement("div");
             itemElement.classList.add("item");
 
+            // Универсальная структура для отображения цен
+            let priceHtml = '';
+
+            if (category === "Pizza" && dish.prices) {
+                // Обработка цен для категории "Pizza"
+                for (const [size, price] of Object.entries(dish.prices)) {
+                    priceHtml += `<div class="item__price">${size} ${price.toFixed(2).replace(".", ",")}€</div>`;
+                }
+            } else if (typeof dish.price === 'object') {
+                // Обработка цен для категорий с объектом `price`
+                for (const [key, value] of Object.entries(dish.price)) {
+                    priceHtml += `<div class="item__price">${key} ${value.toFixed(2).replace(".", ",")}€</div>`;
+                }
+            } else if (typeof dish.price === 'number') {
+                // Обработка цен для категорий с числом `price`
+                priceHtml += `<div class="item__price">${dish.price.toFixed(2).replace(".", ",")}€</div>`;
+            }
+
+            // Заполнение шаблона HTML для блюда
             itemElement.innerHTML = `
                 <div class="item__first-line">
                     <div class="item__box">
-                        <div class="item__number">${dish.id}:</div>
+                        <div class="item__number">${dish.id || ''}:</div>
                         <h3 class="item__name">${dish.name}</h3>
                     </div>
                     <div class="item__price-box">
-                        <div class="item__price">24cm ${dish.price.toFixed(2).replace(".", ",")}€</div>
-                        <div class="item__price">30cm ${dish.price.toFixed(2).replace(".", ",")}€</div>
-                        <div class="item__price">40cm ${dish.price.toFixed(2).replace(".", ",")}€</div>
+                        ${priceHtml}
                     </div>
-
                 </div>
                 <div class="item__desc">
-                    ${dish.ingredients}
+                    ${dish.ingredients || ''}
                 </div>
             `;
 
@@ -75,6 +89,7 @@ const displayMenu = (category) => {
         contentContainer.innerHTML = '<p>Category not found.</p>';
     }
 };
+
 
 // Обработчик кликов на категории
 tagsContainer.addEventListener("click", (e) => {
@@ -88,6 +103,7 @@ tagsContainer.addEventListener("click", (e) => {
 
         target.classList.add("tag-selected");
         const category = target.textContent.trim();
+        console.log(category)
         displayMenu(category);
     }
 });

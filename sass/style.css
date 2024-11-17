@@ -689,7 +689,7 @@ h1 {
 
 .services__container {
   display: flex;
-  gap: 100px;
+  gap: 75px;
 }
 @media screen and (width < 1380px) {
   .services__container {
@@ -714,7 +714,7 @@ h1 {
   width: 100px;
   padding: 10px 15px;
   border: 1px solid black;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   cursor: pointer;
   transition: all 0.3s;
 }
@@ -731,6 +731,11 @@ h1 {
   stroke: #fac564;
   transform: rotate(-135deg);
 }
+.service__icon:hover .instagram__icon {
+  fill: #fac564;
+  stroke: #fac564;
+  transform: rotate(-135deg);
+}
 
 .phone__icon {
   width: 100px;
@@ -738,6 +743,11 @@ h1 {
 }
 
 .whatsapp__icon {
+  width: 100px;
+  height: 75px;
+}
+
+.instagram__icon {
   width: 100px;
   height: 75px;
 }
