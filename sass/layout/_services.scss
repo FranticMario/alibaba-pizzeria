@@ -46,6 +46,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (hover: hover) and (min-width: 768px) {
+        &:hover {
+            color: black;
+        }
+    }
 }
 
 
@@ -57,30 +62,33 @@
     padding: 10px 15px;
     border: 1px solid black;
     margin-bottom: 25px;
-    cursor: pointer;
+    cursor: default;
     transition: all 0.3s;
-    &:hover {
-        background-color: #fff;
-        transform: rotate(135deg);
-        .whatsapp__icon {
-                fill: #fac564; 
+
+    @media (hover: hover) and (min-width: 768px) {
+        &:hover {
+            cursor: pointer;
+            background-color: #fff;
+            transform: rotate(135deg);
+            .whatsapp__icon {
+                    fill: #fac564; 
+                    transform: rotate(-135deg)
+    
+            }
+    
+            .phone__icon {
+                fill: #fac564;
+                stroke: #fac564;
                 transform: rotate(-135deg)
-
-        }
-
-        .phone__icon {
-            fill: #fac564;
-            stroke: #fac564;
-            transform: rotate(-135deg)
-        }
-
-        .instagram__icon {
-            fill: #fac564;
-            stroke: #fac564;
-            transform: rotate(-135deg)
+            }
+    
+            .instagram__icon {
+                fill: #fac564;
+                stroke: #fac564;
+                transform: rotate(-135deg)
+            }
         }
     }
-
 }
 
 
@@ -105,11 +113,6 @@
     text-align: center;
     font-size: 2rem;
     width: 150px;
-    // @media screen and (width < 1380px) {
-    //     font-size: 4.5rem;
-    // }
-    // @media screen and (width < 520px) {
-    //     font-size: 3.5rem;
-    // }
+
 }
 

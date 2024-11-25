@@ -35,9 +35,14 @@
 .active-btn {
     background-color: var(--active-nav-item-color);
     color: #000;
-    &:hover {
-        background: none;
-        color: var(--active-nav-item-color);
-        border-color: var(--active-nav-item-color);
-    }
+
+
+  
+        &:hover {
+            background: none;
+            color: var(--active-nav-item-color);
+            border-color: var(--active-nav-item-color);
+        }
+    
 }
+
